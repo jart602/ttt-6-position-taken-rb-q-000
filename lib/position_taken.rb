@@ -1,7 +1,3 @@
-def position_taken?(board, position)
-  if board[position] == " " || board[position] == "" || board[position] == nil
-    position_taken = false
-  else
-    position_taken = true
-  end
+def position_taken?(board, location)
+  !(board[location].nil? || board[location] == " " || board[location] == "")
 end
